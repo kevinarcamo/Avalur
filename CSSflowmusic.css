@@ -1,0 +1,68 @@
+
+body{
+    background-position: center;
+    background-image: url('./Images/Notesblackground.jpg');
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(82, 12, 12);
+}
+p{
+    color: aqua;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color:rgba(167, 118, 104, 0.7);
+    color: whitesmoke;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    margin: 20px;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+}
+.column{
+    background-color: rgba(229, 192, 153, .8);
+    flex: 1;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.column + .column{
+    margin-left: 20px;
+}
+.img-flow{
+    width: 95%;
+    max-width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px){
+    .flex-container{
+        /* change the direction to column so our recipe details will stack */
+        flex-direction: column;
+    }
+
+    /* let's just add margin on the left between columns */
+    .column + .column{
+        /* setting the margin to 0 - you do not need to specify the unit of measurement - percentage, pixel, etc. */
+        margin-left: 0;
+
+        /* add spacing between the boxes vertically */
+        margin-top: 20px;
+    }
+}
