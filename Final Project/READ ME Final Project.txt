@@ -3,9 +3,10 @@ READ ME
 FINAL PROJECT
 CSC104
 
-Final_Project_Home.html
-Final_Project_Service.html
-Final_Project_Contact.html
+Final_Project_Home.html (Main or Home Page, About)
+Final_Project_Service.html (Graphic design services offered)
+Final_Project_Contact.html (Contact information)
 FPH.css
 FPS.css
 FPC.css
+
